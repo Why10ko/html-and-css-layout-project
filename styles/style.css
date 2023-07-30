@@ -1,0 +1,619 @@
+/* Общие стили */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  color: #1f3f68;
+}
+
+.header_2 {
+  font-weight: 500;
+  font-size: 44px;
+  text-align: center;
+}
+
+.header_3 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+/* Главная страница */
+/* Шапка страницы */
+.header {
+  min-height: 768px;
+  background: linear-gradient(0deg, #ebf3fb 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.header_box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 42px;
+}
+
+.header_info {
+  padding-top: 115px;
+  flex-grow: 1;
+  background-image: url(../img/header_b-i.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 50%;
+}
+
+.header_1 {
+  width: 510px;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  margin-bottom: 32px;
+}
+
+.header_text {
+  width: 425px;
+}
+
+.header_button {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #5a98d0;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  padding: 15px 50px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 71px;
+}
+
+/* Основной контент страницы */
+
+.what_we_do {
+  padding-top: 54px;
+}
+
+.services_block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.service {
+  width: 359px;
+  padding: 44px 32px;
+  box-sizing: border-box;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.img_service {
+  align-self: center;
+  margin-bottom: 51px;
+}
+
+.header_4_service {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  margin-bottom: 14px;
+  margin-top: 51px;
+}
+
+.service_link {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #5a98d0;
+  text-decoration: none;
+  padding-top: 27px;
+}
+
+.service_link::after {
+  content: "\2192";
+  padding-left: 15px;
+}
+
+.text_project {
+  margin: 32px auto 64px;
+  width: 75%;
+  text-align: center;
+  color: #222222;
+  opacity: 1;
+}
+.project_item {
+  position: relative;
+  flex-grow: 1;
+}
+.project_item_margin {
+  margin-right: 32px;
+}
+.project_parent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.project_img {
+  width: 100%;
+}
+
+.project_text {
+  font-size: 32px;
+  line-height: 46px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  position: absolute;
+  top: 64px;
+  right: 64px;
+  font-weight: 300;
+}
+
+.project_text_mini {
+  right: auto;
+  text-align: left;
+  top: 32px;
+  left: 32px;
+}
+
+/* Подвал страницы */
+
+.footer {
+  padding-top: 91px;
+  padding-bottom: 64px;
+  background: #316099;
+  margin-top: 112px;
+}
+
+.footer_top {
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_text {
+  max-width: 495px;
+}
+
+.footer_h3 {
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.text_team_info {
+  color: #ffffff;
+}
+
+.footer_button {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #5a98d0;
+  padding: 15px 80px;
+  text-decoration: none;
+}
+
+hr {
+  opacity: 0.4;
+}
+
+.footer_contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  counter-reset: section;
+}
+
+.contacts_li {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  flex-grow: 1;
+  flex-basis: 33.3333%;
+  list-style-type: none;
+  display: flex;
+  margin-right: 32px;
+}
+
+.contacts_li::before {
+  counter-increment: section;
+  content: counter(section) ".";
+  display: inline-flex;
+  padding-right: 16px;
+}
+
+.copy_footer {
+  margin-top: 64px;
+}
+
+.text_copy_footer {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  opacity: 0.4;
+}
+
+/* Страница Контакты */
+/* Шапка страницы */
+
+.page2_header {
+  height: 470px;
+  background: linear-gradient(253.6deg, #98d0fc 2.46%, #3481d7 93.24%);
+  background-image: url(../img/contacts_header.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page2_header_menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 26px;
+}
+
+.page2_header2 {
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-top: 105px;
+}
+
+.text_header_p_contacts {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 780px;
+  text-align: center;
+  margin: 16px auto 0;
+}
+
+/* Основной контент страницы */
+.p2_header_main {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.icon_phone {
+  list-style-type: none;
+  display: flex;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  margin-bottom: 16px;
+}
+.icon_phone::before {
+  content: url(../img/phone.svg);
+  display: inline-flex;
+  padding-right: 19px;
+}
+
+.icon_website {
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  padding-bottom: 16px;
+}
+.icon_website::before {
+  content: url(../img/ic_language_24px.svg);
+  display: inline-flex;
+  padding-right: 19px;
+}
+
+.icon_email {
+  list-style-type: none;
+  display: flex;
+}
+.icon_email::before {
+  content: url(../img/ic_email_24px.svg);
+  display: inline-flex;
+  padding-right: 19px;
+}
+
+.icon_decor {
+  text-decoration: none;
+  color: #1f3f68;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.container_2 {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.get_info {
+  border: 1px solid #356ead;
+  box-sizing: border-box;
+  border-radius: 5px;
+  opacity: 0.2;
+  margin-top: 8px;
+  padding: 20px 40px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+
+.fell_form_block {
+  background: #ffffff;
+  box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  padding: 56px;
+  color: #1f3f68;
+  margin-bottom: 96px;
+  width: 450px;
+}
+
+.value_fell_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.marginb_32 {
+  margin-bottom: 32px;
+}
+.marginb_48 {
+  margin-bottom: 42px;
+}
+
+.button_submit {
+  background: #5a98d0;
+  box-shadow: 5px 20px 50px rgba(16, 112, 117, 0.2);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 72px;
+  padding: 20px 150px;
+}
+
+/* Адаптив */
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .header_info {
+    background-position: right 100px;
+  }
+
+  .services_block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .container_footer {
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+
+  .footer_button {
+    padding: 3px 40px 10px;
+    white-space: nowrap;
+  }
+
+  .footer_contacts {
+    flex-direction: column;
+  }
+
+  .contacts_li {
+    margin-top: 25px;
+  }
+
+  /* страница уонтакты*/
+
+  .container_2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fell_form_block {
+    margin: 64px 0;
+  }
+  .text_header_p_contacts {
+    max-width: 520px;
+  }
+
+  .page2_header_menu {
+    margin-top: 15px;
+  }
+  .page2_header2 {
+    margin-top: 96px;
+  }
+}
+
+@media (max-width: 667px) {
+  .header_menu {
+    padding-top: 24px;
+  }
+
+  .header {
+    min-height: 376px;
+    padding-bottom: 41px;
+    box-sizing: border-box;
+  }
+
+  .header_info {
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+  }
+
+  .header_1 {
+    width: 100%;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .header_text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header_button {
+    font-size: 12px;
+    line-height: 26px;
+    padding: 0 8px;
+  }
+
+  .header_3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .what_we_do {
+    padding-top: 48px;
+  }
+
+  .services_block {
+    padding-top: 32px;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .text_project {
+    width: 100%;
+  }
+
+  .project_text {
+    font-size: 16px;
+    line-height: 19px;
+    top: 16px;
+    right: 16px;
+  }
+
+  .project_text_mini {
+    left: 16px;
+  }
+
+  .project_parent {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .project_item_margin {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .container_footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer {
+    padding-top: 18px;
+    padding-bottom: 32px;
+  }
+
+  .footer_contacts {
+    margin-top: 32px;
+  }
+
+  .copy_footer {
+    margin-top: 37px;
+  }
+
+  .contacts_li {
+    margin-top: 17px;
+  }
+
+  .text_copy_footer {
+    text-align: center;
+  }
+
+  .footer_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 41px;
+  }
+
+  .text_team_info {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer_h3 {
+    text-align: center;
+    max-width: 60%;
+  }
+
+  .footer_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Странийа контакты */
+  .page2_header2 {
+    margin-top: 78px;
+  }
+}
